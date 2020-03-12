@@ -1,0 +1,44 @@
+.form {
+  &__pol {
+    max-width: 490px;
+  }
+  &__checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 25px;
+    &-input {
+      position: absolute;
+      opacity: 0;
+      z-index: 1;
+      &:checked ~ .form__checkbox-gal svg {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+    &-gal {
+      background: #eee;
+      border: 1px solid $gr;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25px;
+      min-width: 25px;
+      height: 25px;
+      margin-right: 10px;
+      svg {
+        opacity: 0;
+        transform: scale(.5);
+        @include easeinout;
+        path {
+          stroke: $green;
+        }
+      }
+    }
+    &-text {
+      font-size: 15px;
+    }
+  }
+}

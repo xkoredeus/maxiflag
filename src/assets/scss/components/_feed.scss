@@ -1,0 +1,57 @@
+.feed {
+  position: relative;
+  padding: 140px 0;
+  &__decor {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    transform: scale(-1, -1);
+    @include r(1200) {
+      bottom: 0;
+    }
+  }
+  &__decor--2 {
+    position: absolute;
+    background-color: #282828;
+    width: 100%;
+    height: 80%;
+    bottom: 0;
+  }
+  .container {
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    right: 60%;
+    top: -18px;
+    width: 1740px;
+    height: calc(100% + 180px);
+    box-shadow: 0 50px 20px rgba(0, 0, 0, .05);
+    border-radius: 300px;
+    background-image: url(../img/banner__wrapper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    transform: rotate(-6deg) translateX(50%);
+    z-index: 1;
+    @include r(1200) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__in {
+    position: relative;
+    z-index: 2;
+  }
+  .section {
+    &__top {
+      text-align: center;
+    }
+    &__subttl {
+      max-width: 670px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

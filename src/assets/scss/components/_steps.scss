@@ -1,0 +1,154 @@
+.steps {
+  position: relative;
+  padding: 140px 0;
+  &__decor {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    transform: scale(-1,-1);
+    @include r(1200) {
+      bottom: 0;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    right: 60%;
+    top: -18px;
+    width: 1740px;
+    height: calc(100% + 180px);
+    box-shadow: 0 50px 20px rgba(0, 0, 0, .05);
+    border-radius: 300px;
+    background-image: url(../img/banner__wrapper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    transform: rotate(-6deg) translateX(50%);
+    z-index: 1;
+    @include r(1200) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__in {
+    position: relative;
+    z-index: 2;
+  }
+  .section__ttl {
+    margin-bottom: 60px;
+  }
+  &__image {
+    position: absolute;
+    width: 389px;
+    height: 425px;
+    left: 55px;
+    top: 58px;
+    z-index: 3;
+    //@include r(1500) {
+    //  top: -20%;
+    //}
+    &-decor {
+      position: absolute;
+      width: 790px;
+      height: 330px;
+      left: 0;
+      top: 110px;
+      z-index: 2;
+      background-color: #ff7a00;
+      border-radius: 150px;
+      transform: rotate(-7.23deg);
+    }
+    &-wrapper {
+      position: relative;
+      height: 100%;
+    }
+  }
+  &__item {
+    position: relative;
+    max-width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-num {
+      position: absolute;
+      left: -15px;
+      top: -30px;
+      z-index: 1;
+      @include r(1200) {
+        transform: scale(.6);
+        transform-origin: right bottom;
+      }
+    }
+    &-top {
+      width: 170px;
+      height: 170px;
+      border: 1px solid #e4e4e4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      @include easeinout;
+      &:hover {
+        background-color: $orange;
+        .steps__item-icon {
+          fill: #fff !important;
+          stroke: #fff !important;
+        }
+      }
+      @include r(1200) {
+        width: 110px;
+        height: 110px;
+      }
+    }
+    &-icon {
+      fill: $dgr;
+      stroke: $dgr;
+      @include r(1200) {
+        transform: scale(.6);
+      }
+    }
+    &-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      border-radius: 50%;
+      border: 1px solid #DADADA;
+      fill: $dark;
+      padding: 0;
+      width: 31px;
+      min-width: 31px;
+      height: 31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      &:hover {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+      }
+    }
+    span {
+      font-family: $p-bld;
+      font-size: 18px;
+      margin-top: 15px;
+      text-align: center;
+      @include r(1200) {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+    &:hover {
+      .steps__item {
+        &-btn {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.test {
+  position: relative;
+  &__decor {
+    position: absolute;
+    &--1 {
+      left: 0;
+      transform: scale(-1,-1);
+    }
+    &--2 {
+      top: 0;
+      right: 0;
+      transform: scale(-1,-1);
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .section {
+    &__top {
+      text-align: right;
+      max-width: 700px;
+      margin-left: auto;
+    }
+  }
+  &__item {
+    flex-basis: calc(100% / 5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    @include r(1200) {
+      flex-basis: calc(100% / 3);
+    }
+    @include r(600) {
+      flex-basis: calc(100% / 2);
+    }
+    &-top {
+      width: 180px;
+      height: 180px;
+      background-color: #fff;
+      border-radius: 17px;
+      border: 1px solid #E4E4E4;
+      margin-bottom: 15px;
+      @include easeinout;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include r(1200) {
+        width: 110px;
+        height: 110px;
+      }
+    }
+    &-icon {
+      fill: $dgr;
+      @include easeinout;
+      @include r(1200) {
+        transform: scale(.6);
+      }
+    }
+    &:hover {
+      .test__item {
+        &-top {
+          transform: translateY(-5px);
+        }
+      }
+    }
+    span {
+      font-family: $p-bld;
+      font-size: 18px;
+      text-align: center;
+      @include r(1200) {
+        font-size: 14px;
+      }
+    }
+  }
+  &__promo {
+    font-family: $p-bld;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    @include r(1200) {
+      font-size: 16px;
+    }
+  }
+}

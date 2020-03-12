@@ -1,0 +1,28 @@
+<section class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6">
+                <div class="banner__ttl section__ttl">С нами вы преуспеете !</div>
+                <div class="banner__subttl">Мы работаем с разными бизнесами и организациями на индивидуальных условиях</div>
+                <form class="banner__form">
+                    <div class="row">
+                        <div class="col-sm-6 mb-2 mb-sm-0">
+                            <input class="w-100" type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="w-100" type="tel" placeholder="Ваш телефон">
+                        </div>
+                    </div>
+                    {{> policy}}
+                    <button class="btn mt-3" type="submit">Узнать больше</button>
+                </form>
+            </div>
+            <div class="col-xl-6 d-none d-xl-block">
+                <div class="banner__image-wrapper">
+                    <div class="banner__image-decor"></div>
+                    <img class="banner__image" src="{{root}}assets/img/banner__dude_1.png" alt="Man">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,114 @@
+.cat {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  @include r(1200) {
+    display: none;
+  }
+  &__in {
+    position: relative;
+    &-row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      &--hidden {
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-20px);
+        @include easeinout;
+      }
+    }
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    max-width: 80px;
+    &:hover {
+      .btn {
+        background-color: $orange;
+        border-color: $orange;
+      }
+    }
+    &.active {
+      transform: translateY(260px);
+    }
+    &-top {
+      width: 80px;
+      height: 80px;
+    }
+    &-icon {
+      @include easeinout;
+    }
+    span {
+      font-family: $p-reg;
+      font-size: 14px;
+      margin-top: 8px;
+      color: #000;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-basis: calc(100% / 9);
+    margin-bottom: 10px;
+    &-top {
+      width: 80px;
+      height: 80px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include easeinout;
+    }
+    &-icon {
+      fill: $dgr;
+      stroke: $dgr;
+    }
+    span {
+      font-size: 14px;
+      margin-top: 8px;
+      color: #000;
+    }
+    &:hover {
+      .cat__item {
+        &-top {
+          background-color: $orange;
+        }
+        &-icon {
+          fill: #fff;
+          stroke: #fff;
+        }
+      }
+    }
+  }
+}
+.cat-open {
+  .cat {
+    &__btn {
+      &-icon {
+        transform: rotate(-90deg);
+      }
+    }
+    &__in {
+      &-row {
+        &--hidden {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

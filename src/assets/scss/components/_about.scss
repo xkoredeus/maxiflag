@@ -1,0 +1,91 @@
+.about {
+  position: relative;
+  padding: 80px 0 150px;
+  &__decor {
+    position: absolute;
+    left: 0;
+    bottom: -55px;
+    @include r(1200) {
+      bottom: 0;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    left: 60%;
+    top: -208px;
+    width: 1740px;
+    height: calc(100% + 180px);
+    box-shadow: 0 50px 20px rgba(0,0,0,.05);
+    border-radius: 300px;
+    background-image: url(../img/about__bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    transform: rotate(-6deg) translateX(-50%);
+    z-index: 1;
+    @include r(1200) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__in {
+    position: relative;
+    z-index: 2;
+  }
+  &__list {
+    &-item {
+      font-family: $p-bld;
+      font-size: 26px;
+      @include easeinout;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      &:hover {
+        color: $green;
+      }
+      @include r(1200) {
+        font-size: 18px;
+      }
+    }
+    &-btn {
+      border-radius: 50%;
+      border: 1px solid #DADADA;
+      fill: $dark;
+      padding: 0;
+      width: 31px;
+      min-width: 31px;
+      height: 31px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+  &__image {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    max-width: 100%;
+    height: auto;
+    transform: translateY(-50%) scale(.5);
+    opacity: 0;
+    visibility: hidden;
+    @include easeinout;
+    &.active {
+      transform: translateY(-50%) scale(1);
+      opacity: 1;
+      visibility: visible;
+    }
+    &-wrapper {
+      position: relative;
+      height: 100%;
+    }
+  }
+}

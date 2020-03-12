@@ -1,0 +1,46 @@
+.service {
+  position: relative;
+  font-size: 18px;
+  &__decor {
+    position: absolute;
+    &--1 {
+      bottom: 0;
+      right: 0;
+    }
+    &--2 {
+      left: 0;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  .section {
+    &__top {
+      text-align: right;
+      max-width: 1070px;
+      margin-left: auto;
+    }
+  }
+  &__item {
+    position: relative;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include easeinout;
+    @include cv;
+    border-radius: 20px;
+    border: 1px solid #E4E4E4;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.33);
+    overflow: hidden;
+    &:hover {
+      box-shadow: 0 3px 12px 0 rgba(0,0,0,0.33);
+      transform: translateY(-5px);
+      color: $dark;
+    }
+    &-ttl {
+      position: relative;
+      font-family: $p-bld;
+    }
+  }
+}

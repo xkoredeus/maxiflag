@@ -1,0 +1,20 @@
+.btn {
+  position: relative;
+  font-size: 15px;
+  font-family: $p-bld;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  outline: none;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: $green;
+  border-radius: 10px;
+  border: 1px solid #59A310;
+  @include easeinout;
+  &:hover {
+    color: $dark;
+    background-color: $orange;
+    border-color: $orange;
+  }
+}

@@ -1,0 +1,36 @@
+<header class="header">
+    <div class="header__bg"></div>
+    <div class="header__top">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="#" class="header__logo">
+                    <svg width="185" height="44">
+                        <use xlink:href="#logo"></use>
+                    </svg>
+                </a>
+                <nav class="header__nav flex-grow-1 d-none d-xl-flex justify-content-between align-items-center px-4">
+                    <a class="header__nav-link" href="#">Услуги</a>
+                    <a class="header__nav-link" href="#">О нас</a>
+                    <a class="header__nav-link" href="#">Сделать заказ</a>
+                    <a class="header__nav-link" href="#">Требования к макетам</a>
+                    <a class="header__nav-link" href="#">Полезная информация</a>
+                    <a class="header__nav-link" href="#">Контакты</a>
+                </nav>
+                <div class="d-none d-xl-flex flex-column">
+                    <a class="header__tel" href="tel:89123456789">8 9123 456 789</a>
+                    <a class="header__tel" href="tel:89123456789">8 9123 456 789</a>
+                </div>
+                <button class="hamburger d-xl-none" data-fancybox data-src="#menu" type="button">
+                    <svg width="28" height="22" class="hamburger__icon">
+                        <use xlink:href="#icon__hamburger"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="header__bot">
+        <div class="container">
+            {{> category}}
+        </div>
+    </div>
+</header>

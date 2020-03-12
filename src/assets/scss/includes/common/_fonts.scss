@@ -1,0 +1,12 @@
+$p-reg: 'ProximaNova-Regular';
+$p-blck: 'ProximaNova-Black';
+$p-bld: 'ProximaNova-Bold';
+$g-exbl: 'ProximaNova-Extrabld';
+$g-thn: 'ProximaNovaT-Thin';
+
+.bold {
+  font-family: $p-bld, Roboto, sans-serif !important;
+}
+.reg {
+  font-family: $p-reg !important;
+}

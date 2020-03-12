@@ -1,0 +1,103 @@
+<!--popup form-->
+<div id="popup_call" class="popup__container" style="display:none">
+    <div  class="popup__wrp popup_call__wrp">
+        <form action="[[~[[*id]]]]" method="post" class="popup" autocomplete="off">
+            <h3 class="popup__ttl">Оставьте заявку</h3>
+            <div class="popup_call__in d-flex flex-column">
+                <input class="mb-2" type="text" placeholder="Ваше имя" required="">
+                <input class="mb-2" type="tel" placeholder="Телефон" required="">
+                <input class="mb-2" type="email" placeholder="E-mail">
+                <button type="submit" class="btn mb-3 w-100">Заказать</button>
+                {{> policy}}
+            </div>
+
+        </form>
+    </div>
+</div>
+<!--/popup form-->
+<!--hamburger-->
+<div id="menu" class="menu__wrp" style="display:none">
+    <div class="container">
+        <button type="button" class="menu__close js-menu__close mb-3">
+            <svg width="71" height="10" viewBox="0 0 71 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M71 5H1.5M1.5 5L6 0.5M1.5 5L6 9.5" stroke="#2F2F2F"/>
+            </svg>
+            <span class="ml-3">Назад</span>
+        </button>
+        <div class="d-flex flex-column align-items-center">
+            <svg width="185" height="44" class="menu__logo mb-3">
+                <use xlink:href="#logo"></use>
+            </svg>
+            <div class="d-flex flex-column tac mb-3">
+                <a class="menu__tel bold" href="tel:89123456789">8 9123 456 789</a>
+                <a class="menu__tel bold" href="tel:89123456789">8 9123 456 789</a>
+            </div>
+            <nav class="menu__nav d-flex flex-column align-items-center mb-3">
+                <a class="menu__nav-link" href="#">Услуги</a>
+                <a class="menu__nav-link" href="#">О нас</a>
+                <a class="menu__nav-link" href="#">Сделать заказ</a>
+                <a class="menu__nav-link" href="#">Требования к макетам</a>
+                <a class="menu__nav-link" href="#">Полезная информация</a>
+                <a class="menu__nav-link" href="#">Контакты</a>
+            </nav>
+            <div class="menu__cat-ttl mb-2">Категории</div>
+            <nav class="menu__cat">
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_1"></use>
+                    </svg>
+                    <span class="ml-2">Печать на&nbsp;ткани</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_2"></use>
+                    </svg>
+                    <span class="ml-2">Флаги</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_3"></use>
+                    </svg>
+                    <span class="ml-2">Флаг парус, виндер, капля</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_4"></use>
+                    </svg>
+                    <span class="ml-2">Флажки настольные</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_5"></use>
+                    </svg>
+                    <span class="ml-2">Флаги стран и городов</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_6"></use>
+                    </svg>
+                    <span class="ml-2">Флаг победы</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_7"></use>
+                    </svg>
+                    <span class="ml-2">Баннеры на&nbsp;ткани</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_8"></use>
+                    </svg>
+                    <span class="ml-2">Фоны для&nbsp;кино и&nbsp;театров</span>
+                </a>
+                <a class="menu__cat-link d-flex align-items-center" href="#">
+                    <svg width="25" height="25" class="cat__item-icon">
+                        <use xlink:href="#cat__item_9"></use>
+                    </svg>
+                    <span class="ml-2">Вымпелы</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--/hamburger-->

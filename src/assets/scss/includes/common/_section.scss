@@ -1,0 +1,29 @@
+.section {
+  &_inner {
+    padding: 60px 0;
+    @include r(1200) {
+      padding: 35px 0
+    }
+  }
+  &__ttl {
+    font-family: $p-bld;
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 45px;
+    @include r(1200) {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+  }
+  &__subttl {
+    font-family: $p-bld;
+    font-size: 24px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    @include r(1200) {
+      font-size: 16px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+    }
+  }
+}
