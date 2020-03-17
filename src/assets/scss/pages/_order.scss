@@ -1,0 +1,18 @@
+.order {
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+  &-file {
+    &__wrapper {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-grow: 1;
+      border: 1px dashed $gr;
+      border-radius: 16px;
+    }
+  }
+}

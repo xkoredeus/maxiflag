@@ -17,4 +17,32 @@
     background-color: $orange;
     border-color: $orange;
   }
+  &--file {
+    position: relative;
+    cursor: pointer;
+    padding: 8px 25px;
+    min-height: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #fff;
+    .upload__file {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    label.filename {
+      cursor: pointer;
+      margin-bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &:hover {
+      fill: $dark;
+    }
+  }
 }

@@ -27,32 +27,42 @@
         }
       }
     }
-    .popup__wrp {
+    .popup {
+      width: 100%;
+      height: 100%;
       position: relative;
+      z-index: 2;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      max-width: 600px;
-      .popup {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        background-color: #fff;
-        color: $dark;
-        padding: 30px 25px 30px;
-        &__ttl {
-          font-family: $p-bld;
+      justify-content: flex-start;
+      background-color: #fff;
+      color: $dark;
+      padding: 30px 25px 30px;
+      border-radius: 16px;
+      min-width: 470px;
+      @include r(1200) {
+        min-width: 370px;
+      }
+      @include r(600) {
+        min-width: 320px;
+      }
+      &__ttl {
+        font-family: $p-bld;
+      }
+      &_call {
+        &__wrp {
+          max-width: 500px;
+          width: 100%;
         }
-        &_call {
-          &__wrp {
-            max-width: 500px;
-            width: 100%;
+      }
+      &_steps {
+        &__wrp {
+          svg {
+            fill: #000;
+          }
+          .popup {
+            align-items: flex-start;
           }
         }
       }

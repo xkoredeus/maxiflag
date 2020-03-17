@@ -1,0 +1,92 @@
+div {
+  &.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    ul {
+      &.pagination {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0;
+        li {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include ease;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+          &.page-item {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.active {
+              background-color: $orange;
+              a {
+                color: #fff;
+              }
+            }
+            a {
+              font-family: $p-bld;
+              color: $dark;
+              border: none;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          &:hover {
+            opacity: .7
+          }
+          &.control {
+            opacity: 1;
+            color: #fff;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: $tr;
+            &:hover {
+              background-color: $orange;
+            }
+            span {
+              width: 24px;
+              height: 24px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              @include ease;
+              svg {
+                max-width: 17px;
+                max-height: 17px;
+                height: auto;
+                fill: none;
+                stroke: $green;;
+                @include ease;
+              }
+              &_prev {
+                margin-right: 5px
+              }
+              &_next {
+                margin-left: 5px
+              }
+              &:hover {
+                background-color: $orange;
+                border-color: $orange;
+                svg {
+                  stroke: #fff
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

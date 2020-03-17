@@ -1,4 +1,5 @@
 .footer {
+  position: relative;
   color: #fff;
   background-color: #282828;
   padding: 50px 0;
@@ -55,6 +56,25 @@
       color: #872ac4;
       svg {
         fill: #872ac4;
+      }
+    }
+  }
+}
+.inner__wrapper {
+  .footer {
+    padding: 60px 0;
+    @include r(1200) {
+      padding: 30px 0;
+    }
+    &__decor--2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1200px;
+      @include r(1200) {
+        height: 20px;
+        left: auto;
+        right: 0;
       }
     }
   }

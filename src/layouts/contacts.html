@@ -1,0 +1,61 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{!— Required meta tags --}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ff7a00">
+    <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+    <title>New Project</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body>
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
+
+    <div class="content__wrapper inner__wrapper">
+        <div class="body__overlay"></div>
+        {{> header}}
+        <main class="content__in">
+            <section class="section--inner">
+                <svg class="content__in-decor content__in-decor--1" width="250" height="330">
+                    <use xlink:href="#section__decor--1"></use>
+                </svg>
+                <svg class="content__in-decor content__in-decor--2" width="119" height="205">
+                    <use xlink:href="#section__decor--2"></use>
+                </svg>
+                <div class="container">
+                    {{> crumbs}}
+                    {{> body}}
+                </div>
+            </section>
+        </main>
+        <section class="section--inner contacts-map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <form class="contacts-map__form">
+                            <input class="w-100 mb-2 mb-xl-3" type="text" placeholder="Ваше имя">
+                            <input class="w-100 mb-2 mb-xl-3" type="tel" placeholder="Ваш телефон">
+                            {{> policy}}
+                            <button class="btn w-100" type="submit">Уточнить детали</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="contacts-map__in"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{> footer}}
+    </div>
+    {{> popups}}
+    {{> svg}}
+
+   <script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

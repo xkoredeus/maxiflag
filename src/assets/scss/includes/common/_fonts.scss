@@ -10,3 +10,9 @@ $g-thn: 'ProximaNovaT-Thin';
 .reg {
   font-family: $p-reg !important;
 }
+.font-18 {
+  font-size: 18px;
+  @include r(1200) {
+    font-size: 16px;
+  }
+}

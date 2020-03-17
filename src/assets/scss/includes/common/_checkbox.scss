@@ -8,6 +8,11 @@
     align-items: center;
     cursor: pointer;
     margin-top: 25px;
+    margin-bottom: 25px;
+    @include r(1200) {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
     &-input {
       position: absolute;
       opacity: 0;

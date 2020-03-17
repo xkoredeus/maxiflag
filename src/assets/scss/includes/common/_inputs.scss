@@ -7,7 +7,11 @@ select {
   padding: 12px 25px;
   border-radius: 10px;
   border: 1px solid $gr;
+  background-color: #fff;
   @include easeinout;
+}
+select {
+  padding: 12px 25px;
 }
 option {
   color: $gr;
@@ -37,4 +41,11 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
+}
+.form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+  background: #fff url('../img/icon--select-arrow.svg') no-repeat 97% 50% / 12px;
 }

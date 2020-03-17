@@ -1,0 +1,191 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    {{!— Required meta tags --}}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#ff7a00">
+    <link rel="shortcut icon" href="{{root}}assets/img/favicon.ico" type="image/x-icon">
+    <title>New Project</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body>
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
+
+    <div class="content__wrapper inner__wrapper">
+        <div class="body__overlay"></div>
+        {{> header}}
+        <main class="content__in">
+            <section class="section--inner">
+                <svg class="content__in-decor content__in-decor--1" width="250" height="330">
+                    <use xlink:href="#section__decor--1"></use>
+                </svg>
+                <svg class="content__in-decor content__in-decor--2" width="119" height="205">
+                    <use xlink:href="#section__decor--2"></use>
+                </svg>
+                <div class="container">
+                    {{> crumbs}}
+                    <h1 class="section__ttl">Название услуги</h1>
+                    <p>Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                    <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                    <div class="row service-page__gallery">
+                        <div class="col-sm-4 mb-2 mb-sm-0 ">
+                            <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                        </div>
+                        <div class="col-sm-4 mb-2 mb-sm-0 ">
+                            <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                        </div>
+                        <div class="col-sm-4 mb-2 mb-sm-0 ">
+                            <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                        </div>
+                    </div>
+                    <div class="service-page__list">
+                        <div class="service-page__item">
+                            <button class="service-page__item-btn js-service-page__item-btn">
+                                <span>Информация о услуге</span>
+                                <svg class="service-page__item-arrow" width="14" height="9" fill="none" stroke="#000">
+                                    <use xlink:href="#accordion__arrow"></use>
+                                </svg>
+                            </button>
+                            <div class="service-page__item-in">
+                                <div class="service-page__item-ttl">Подзаголовок</div>
+                                <p>Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                                <div class="row service-page__gallery mb-0">
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-page__item">
+                            <button class="service-page__item-btn js-service-page__item-btn">
+                                <span>Информация о услуге</span>
+                                <svg class="service-page__item-arrow" width="14" height="9" fill="none" stroke="#000">
+                                    <use xlink:href="#accordion__arrow"></use>
+                                </svg>
+                            </button>
+                            <div class="service-page__item-in">
+                                <div class="service-page__item-ttl">Подзаголовок</div>
+                                <p>Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                                <div class="row service-page__gallery mb-0">
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-page__item">
+                            <button class="service-page__item-btn js-service-page__item-btn">
+                                <span>Информация о услуге</span>
+                                <svg class="service-page__item-arrow" width="14" height="9" fill="none" stroke="#000">
+                                    <use xlink:href="#accordion__arrow"></use>
+                                </svg>
+                            </button>
+                            <div class="service-page__item-in">
+                                <div class="service-page__item-ttl">Подзаголовок</div>
+                                <p>Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                <p>Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Товарищи! дальнейшее развитие различных форм деятельности позволяет оценить значение соответствующий условий активизации.</p>
+                                <div class="row service-page__gallery mb-0">
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                    <div class="col-sm-4 mb-2 mb-sm-0 ">
+                                        <a class="service-page__gallery-item" style="background-image: url({{root}}assets/img/blog__img_1.jpg);" data-fancybox href="{{root}}assets/img/blog__img_1.jpg"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <section class="section--inner service-page__info">
+            <div class="container">
+                <div class="section__ttl">Название услуги</div>
+                <div class="service-page__table-wrapper mb-4 mb-xl-5">
+                    <table class="service-page__table">
+                        <tr>
+                            <th>Название столбца</th>
+                            <th>Название столбца</th>
+                            <th>Название столбца</th>
+                        </tr>
+                        <tr>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                        </tr>
+                        <tr>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                        </tr>
+                        <tr>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                        </tr>
+                        <tr>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                            <td>Содержание строки</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="section__ttl">Условия покупки</div>
+                <div class="tabs">
+                    <div class="tabs__list">
+                        <div class="tabs__list-item">Условия покупки</div>
+                        <div class="tabs__list-item">Условия оплаты</div>
+                        <div class="tabs__list-item">Гарантия / возврат</div>
+                        <div class="tabs__list-item">Сроки выполнения / срочность</div>
+                    </div>
+                    <div class="tabs__content">
+                        <div class="tabs__content-item">
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="mb-2 mb-xl-3 bold font-18">Оплата наличными</div>
+                                <p>Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Задача организации, в особенности же реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.</p>
+                                <div class="mb-2 mb-xl-3 bold font-18">Оплата банковской картой</div>
+                                <p>Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание дальнейших направлений развития. Задача организации</p>
+                                <img src="{{root}}assets/img/payment.png" alt="Payment">
+                                <button class="btn mt-2 mt-xl-3" type="button" data-src="#popup_call" data-fancybox="">Узнать больше</button>
+                            </div>
+                        </div>
+                        <div class="tabs__content-item">2</div>
+                        <div class="tabs__content-item">3</div>
+                        <div class="tabs__content-item">4</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{> blog--inner}}
+        {{> feed--inner}}
+        {{> footer}}
+    </div>
+    {{> popups}}
+    {{> svg}}
+
+   <script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

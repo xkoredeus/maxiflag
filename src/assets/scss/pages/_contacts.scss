@@ -1,0 +1,12 @@
+.contacts {
+  &-map {
+    background-color: #fff;
+    &__in {
+      min-height: 220px;
+      width: 100%;
+      height: 100%;
+      background-image: url('../img/contacts__map.jpg');
+      @include cv;
+    }
+  }
+}

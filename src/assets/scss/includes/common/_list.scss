@@ -1,0 +1,23 @@
+.list {
+  &--circle {
+    list-style-type: none;
+    padding-left: 0;
+    li {
+      padding-left: 15px;
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: $green;
+        left: 0;
+        top: 4px;
+        border-radius: 50%;
+      }
+    }
+  }
+}

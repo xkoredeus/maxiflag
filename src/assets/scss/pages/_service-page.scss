@@ -1,0 +1,168 @@
+.service-page {
+  &__gallery {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    @include r(1200) {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    &-item {
+      width: 100%;
+      height: 220px;
+      border-radius: 20px;
+      display: block;
+      @include cv;
+      @include easeinout;
+      &:hover {
+        opacity: .9;
+      }
+    }
+  }
+  &__item {
+    background-color: #fff;
+    border: 1px solid $gr;
+    border-radius: 15px;
+    padding: 25px;
+    @include easeinout;
+    @include r(1200) {
+      padding: 15px;
+    }
+    @include r(600) {
+      padding: 10px;
+    }
+    &:hover {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.05);
+    }
+    &:not(:last-child) {
+      margin-bottom: 15px;
+      @include r(1200) {
+        margin-bottom: 10px;
+      }
+    }
+    &.active {
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.15);
+      .service-page__item {
+        &-arrow {
+          transform: scaleY(-1);
+        }
+      }
+    }
+    &-btn {
+      padding: 0;
+      background-color: #fff;
+      border: none;
+      outline: none;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    span {
+      font-family: $p-bld;
+      font-size: 18px;
+      margin-right: 10px;
+      @include r(1200) {
+        font-size: 14px;
+      }
+    }
+    &-arrow {
+      @include easeinout;
+    }
+    &-in {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #0003;
+      display: none;
+    }
+    &-ttl {
+      font-family: $p-bld;
+      font-size: 22px;
+      margin-bottom: 15px;
+      @include r(1200) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__info {
+    background-color: #fff;
+    .tabs {
+      &__list {
+        border-bottom: 1px solid $orange;
+        display: flex;
+        @include r(600) {
+          overflow-x: auto;
+        }
+        &-item {
+          text-align: center;
+          flex-basis: 25%;
+          padding: 15px;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          background-color: #F4F4F4;
+          @include easeinout;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:not(:last-child) {
+            margin-right: 3px;
+          }
+          &.active {
+            color: #fff;
+            background-color: $orange;
+          }
+          &:hover {
+            color: #fff;
+            background-color: $green;
+          }
+          @include r(1200) {
+            font-size: 12px;
+            flex-basis: auto;
+            padding: 5px;
+          }
+        }
+      }
+      &__content {
+        &-item {
+          padding: 25px 0;
+          @include r(1200) {
+            padding: 10px 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  &__table {
+    width: 100%;
+    @include r(600) {
+      font-size: 12px;
+    }
+    &-wrapper {
+      width: 100%;
+      overflow-x: scroll;
+    }
+    th {
+      font-family: $p-bld;
+      font-size: 18px;
+      @include r(1200) {
+        font-size: 13px;
+      }
+    }
+    th,
+    td {
+      padding: 12px 25px;
+      @include r(1200) {
+        padding: 10px;
+      }
+      @include r(600) {
+        padding: 5px;
+      }
+      &:not(:last-child) {
+        border-right: 1px solid #0003;
+      }
+    }
+    tr:nth-child(even) {
+      background-color: #F4F4F4;
+    }
+  }
+}

@@ -3,9 +3,6 @@
 @import "includes/bs-grid/grid";
 @import "includes/base";
 
-
-@import "pages/home";
-
 @import "components/header";
 @import "components/banner";
 @import "components/category";
@@ -17,5 +14,11 @@
 @import "components/feed";
 @import "components/footer";
 
-
 @import "components/crumbs";
+@import "components/pagination";
+@import "components/feed--inner";
+
+@import "pages/contacts";
+@import "pages/standarts";
+@import "pages/order";
+@import "pages/service-page";

@@ -1,0 +1,9 @@
+.feed--inner {
+  background-color: #fff;
+  .section {
+      &__ttl,
+      &__subttl {
+        text-align: center;
+    }
+  }
+}

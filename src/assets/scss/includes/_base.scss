@@ -6,6 +6,7 @@
 @import "common/selections";
 @import "common/states";
 @import "common/inputs";
+@import "common/list";
 @import "common/links";
 @import "common/buttons";
 @import "common/checkbox";
@@ -45,4 +46,36 @@ html, body {
 .svg-sprite {
   position: absolute;
   bottom: 0;
+}
+.content {
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  &__in {
+    position: relative;
+    flex-grow: 1;
+    .section--inner {
+      position: relative;
+    }
+    &-decor {
+      position: absolute;
+      &--1 {
+        left: 0;
+        bottom: 100px;
+        transform: scale(-1,-1);
+      }
+      &--2 {
+        top: 25px;
+        right: 0;
+        transform: scale(-1,-1);
+      }
+    }
+    .container {
+      position: relative;
+    }
+  }
 }
