@@ -21,16 +21,13 @@ var gulp = require('gulp'),
 // Compile Sass into CSS
 gulp.task('sass', function () {
     return gulp.src(['src/assets/scss/*.scss'])
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(sass({ 
             outputStyle: 'expanded',
-            sourceComments: 'map',
-            sourceMap: 'sass',
-            outputStyle: 'nested'
         }).on('error', sass.logError))
         .pipe(autoprefixer('last 2 versions'))
-        .pipe(cssnano()) // Use cssnano to minify CSS
-        .pipe(sourcemaps.write('./'))
+        // .pipe(cssnano()) // Use cssnano to minify CSS
+        // .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest("dist/assets/css"))
         .pipe(browserSync.stream());
 });
@@ -95,11 +92,11 @@ gulp.task('scripts', function () {
         'src/assets/js/vendor/owl.carousel/owl.carousel.min.js',
         'src/assets/js/app.js'
     ])
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         //If concatenating more than one JS file
         .pipe(concat('app.js'))
-        .pipe(sourcemaps.write('./'))
-        .pipe(minify())
+        // .pipe(sourcemaps.write('./'))
+        // .pipe(minify())
         .pipe(gulp.dest('dist/assets/js/'))
         .pipe(browserSync.stream());
 });

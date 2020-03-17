@@ -59,7 +59,7 @@ $(() => {
 $(() => {
     $('.js-service-page__item-btn').on('click', function serviceItemBtnClick() {
         const top = $(this).offset().top;
-        $('body,html').animate({scrollTop: top - 100}, 300);
+        // $('body,html').animate({scrollTop: top - 100}, 300);
         $(this)
             .parent('.service-page__item')
             .toggleClass('active')
